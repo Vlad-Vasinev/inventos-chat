@@ -1,0 +1,127 @@
+@import "vars";
+@import "fonts";
+@import "global";
+@import "reset";
+@import "media";
+
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+.chat {
+    margin: 60px 0 140px 0;
+    &__title {
+        text-align: center;
+        font-size: 88px;
+        line-height: 100px;
+        margin-bottom: 60px;
+    }
+    &__wrapper {
+        box-sizing: border-box;
+        padding: 0 10px;
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+    }
+}
+
+.video {
+    width: 100%;
+    max-width: 800px;
+}
+
+.chats {
+    margin-left: 100px;
+}
+
+.mychat {
+    display: none;
+    max-height: 454px;
+    overflow-y: scroll;
+    &__item {
+        margin-right: 10px;
+        padding-bottom: 3px;
+        border-bottom: 1px solid grey;
+    }
+    &__item + &__item {
+        margin-top: 20px;
+    }
+    &__name {
+        margin-bottom: 4px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    &__message {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+.form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    &__message {
+        margin: 20px 0 0 auto;
+        width: 50%;
+    }
+    display: none;
+}
+
+// .add {
+//     margin-top: 50px;
+//     display: flex;
+//     flex-direction: column;
+//     &__message {
+//         margin: 20px 0 0 auto;
+//         width: 50%;
+//     }
+// }
+
+/*
+    адаптив
+*/
+
+@media (max-width: 900px) {
+    .video {
+        margin-bottom: 40px;
+    }
+    .chat {
+        &__title {
+            font-size: 70px;
+            line-height: 82px;
+        }
+        &__wrapper {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    .chats {
+        margin-left: 0;
+    }
+}
+@media (max-width: 700px) {
+    .chat {
+        &__title {
+            font-size: 52px;
+            line-height: 64px;
+        }
+    }
+}
+@media (max-width: 450px) {
+    .chat {
+        &__title {
+            font-size: 40px;
+            line-height: 52px;
+        }
+    }
+    .mychat{
+        max-height: 290px;
+    }
+    .add{
+        margin-top: 30px;
+    }
+}

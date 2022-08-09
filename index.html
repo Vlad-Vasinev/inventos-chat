@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title>Chat</title>
+    <link href="https://vjs.zencdn.net/7.20.1/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+
+    <section class="chat">
+        <div class="container">
+            <h1 class="chat__title">Here is a simple chat</h1>
+            <div class="chat__wrapper">
+                <div class="video">
+                    <video id='video-1' controls preload="auto" width="100%" height="auto" muted playsinline
+                        webkit-playsinline preload="auto">
+                        <source src="/video/video-1.webm" type="video/webm">
+                        <source src="/video/video-1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="chats">
+                    <ul class="mychat">
+                        <li class="mychat__item">
+                            <p class="mychat__name"> John </p>
+                            <div class="mychat__message"> You know men, when it comes to girls... </div>
+                        </li>
+                        <li class="mychat__item">
+                            <p class="mychat__name"> Carlos </p>
+                            <div class="mychat__message"> Actually, she is smatter, then you give her credit for...
+                            </div>
+                        </li>
+                        <li class="mychat__item">
+                            <p class="mychat__name"> Mike </p>
+                            <div class="mychat__message"> Understood, take your time... </div>
+                        </li>
+                    </ul>
+                    <form class="form add">
+                        <input class="input-name" type="text" class="add__text" placeholder="Register your name!">
+                        </input>
+                        <input class="input-message" type="text" class="add__text"
+                            placeholder="Click to post your message here!">
+                        </input>
+                        <button type="submit" class="add__message"> Post message </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://vjs.zencdn.net/7.20.1/video.min.js"></script>
+    <!-- <script src="/js/main.js"></script> -->
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
